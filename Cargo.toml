@@ -1,0 +1,8 @@
+[package]
+name = "strict_weak_order_sort"
+version = "0.1.0"
+authors = ["kokeshing <kou7cdb1a@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+is_sorted = "0.1.0"

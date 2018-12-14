@@ -1,0 +1,14 @@
+[[package]]
+name = "is_sorted"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "strict_weak_order_sort"
+version = "0.1.0"
+dependencies = [
+ "is_sorted 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum is_sorted 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "c1fc9d95b5beed4469845e420961529b7391c471d10bd0482bce9e3c2949d439"
