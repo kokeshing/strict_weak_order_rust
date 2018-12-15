@@ -58,17 +58,17 @@ impl PartialEq for P {
         match self {
             P::A => match other {
                 P::A => true,
-                P::B => false,
+                P::B => true,
                 P::C => false,
             },
             P::B => match other {
-                P::A => false,
+                P::A => true,
                 P::B => true,
                 P::C => false,
             },
             P::C => match other {
                 P::A => false,
-                P::B => false,
+                P::B => true,
                 P::C => true,
             }
         }
