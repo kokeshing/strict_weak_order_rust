@@ -64,7 +64,7 @@ impl PartialEq for P {
             P::B => match other {
                 P::A => true,
                 P::B => true,
-                P::C => false,
+                P::C => true,
             },
             P::C => match other {
                 P::A => false,
@@ -102,14 +102,20 @@ fn main() {
     println!("反対称律");
     println!("A < B => {:?}", P::A < P::B);
     println!("B < A => {:?}", P::B < P::A);
+    println!("A > B => {:?}", P::A > P::B);
+    println!("B > A => {:?}", P::B > P::A);
     println!("A = B => {:?}", P::A == P::B);
     println!("");
     println!("B < C => {:?}", P::B < P::C);
     println!("C < B => {:?}", P::C < P::B);
+    println!("B > C => {:?}", P::B > P::C);
+    println!("C > B => {:?}", P::C > P::B);
     println!("B = C => {:?}", P::B == P::C);
     println!("");
     println!("C < A => {:?}", P::C < P::A);
     println!("A < C => {:?}", P::A < P::C);
+    println!("C > A => {:?}", P::C > P::A);
+    println!("A > C => {:?}", P::A > P::C);
     println!("C = A => {:?}", P::C == P::A);
     println!("");
     println!("");
