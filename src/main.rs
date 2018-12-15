@@ -97,6 +97,25 @@ fn main() {
     println!("C < A => {:?}", P::C < P::A);
     println!("A < C => {:?}", P::A < P::C);
     println!("");
+    println!("A > B => {:?}", P::A > P::B);
+    println!("B > C => {:?}", P::B > P::C);
+    println!("A > C => {:?}", P::A > P::C);
+    println!("");
+    println!("B > C => {:?}", P::B > P::C);
+    println!("C > A => {:?}", P::C > P::A);
+    println!("B > A => {:?}", P::B > P::A);
+    println!("");
+    println!("C > A => {:?}", P::C > P::A);
+    println!("A > B => {:?}", P::A > P::B);
+    println!("C > B => {:?}", P::C > P::B);
+    println!("");
+    println!("A > C => {:?}", P::A > P::C);
+    println!("C > B => {:?}", P::C > P::B);
+    println!("A > B => {:?}", P::A > P::B);
+    println!("");
+    println!("C > B => {:?}", P::C > P::B);
+    println!("B > A => {:?}", P::B > P::A);
+    println!("C > A => {:?}", P::C > P::A);
     println!("");
 
     println!("反対称律");
