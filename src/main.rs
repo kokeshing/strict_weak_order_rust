@@ -133,8 +133,20 @@ fn main() {
 
     let mut vector = vec![P::A, P::B, P::C, P::B, P::C, P::A, P::B, P::A];
 
+    print!("ソート前配列:");
+    print!("[");
+    for x in &vector {
+        match &x {
+            P::A => print!("{} ", "A"),
+            P::B => print!("{} ", "B"),
+            P::C => print!("{} ", "C"),
+        }
+    }
+    println!("\u{8}]");
+
     vector.sort();
 
+    print!("ソート後配列:");
     print!("[");
     for x in &vector {
         match &x {
